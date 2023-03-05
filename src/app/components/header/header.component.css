@@ -22,4 +22,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .product__header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product__search {
+    margin-bottom: 8px;
+  }
 }
