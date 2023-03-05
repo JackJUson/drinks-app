@@ -9,5 +9,9 @@ import drinksData from '../json/data.json';
 export class DrinkFilterService {
   drinks: Drink[] = drinksData;
 
-  constructor() { }
+  constructor() {}
+
+  filterDrinks(value: string): void {
+    
+  }
 }
