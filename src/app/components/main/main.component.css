@@ -12,3 +12,12 @@
   height: 16vw;
   width: 16vw;
 }
+
+.product__img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+}
