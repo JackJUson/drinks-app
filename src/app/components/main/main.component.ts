@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Drink } from 'src/app/Drink';
+import drinksData from '../../json/data.json';
 
 @Component({
   selector: 'app-main',
