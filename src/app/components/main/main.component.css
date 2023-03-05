@@ -1,3 +1,9 @@
 .main {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.product__container {
+  width: calc(100% / 4);
+  border: 1px solid palevioletred;
 }
