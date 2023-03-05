@@ -12,10 +12,19 @@ export class DrinkFilterService {
 
   filteredDrinks = new BehaviorSubject<Drink[]>([]);
 
-  constructor() {}
+  constructor() {
+    // initialize with default filter and empty search term
+    this.filterDrinks('All'); 
+  }
 
   filterDrinks(value: string): void {
-    const filteredDrinks = this.drinks.filter((drink) => drink.type === value);
+    const filteredDrinks = this.drinks.filter(drink => {
+      if (value === 'All') {
+        return true;
+      } else {
+        return drink.type === value;
+      }
+    });
     this.filteredDrinks.next(filteredDrinks);
   }
 
