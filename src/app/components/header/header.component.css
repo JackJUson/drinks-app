@@ -1,4 +1,4 @@
-.project__header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,16 +7,16 @@
   border: 1px solid rebeccapurple;
 }
 
-.project__input {
+.header__input {
   padding: 8px 16px;
   font-size: 16px;
 }
 
-.project__menu--label {
+.header__menu--label {
   margin-right: 8px;
 }
 
-.project__menu--list {
+.header__menu--list {
   padding: 2px 16px 2px 6px;
   font-size: 16px;
 }
