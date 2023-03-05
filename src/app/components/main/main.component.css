@@ -51,16 +51,31 @@
   .product__container {
     width: calc(100% / 3);
   }
+
+  .product__img-wrapper {
+    height: 24vw;
+    width: 24vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .product__container {
     width: calc(100% / 2);
   }
+
+  .product__img-wrapper {
+    height: 32vw;
+    width: 32vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .product__container {
     width: 100%;
+  }
+
+  .product__img-wrapper {
+    height: 50vw;
+    width: 50vw;
   }
 }
