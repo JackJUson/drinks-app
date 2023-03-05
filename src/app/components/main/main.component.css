@@ -7,3 +7,8 @@
   width: calc(100% / 4);
   border: 1px solid palevioletred;
 }
+
+.product__img--wrapper {
+  height: 16vw;
+  width: 16vw;
+}
