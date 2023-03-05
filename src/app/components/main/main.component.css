@@ -11,6 +11,13 @@
   align-items: center;
   padding: 32px;
   border: 1px solid palevioletred;
+  position: relative;
+}
+
+.product__sale {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .product__img--wrapper {
