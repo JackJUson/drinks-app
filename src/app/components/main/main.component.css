@@ -52,7 +52,7 @@
     width: calc(100% / 3);
   }
 
-  .product__img-wrapper {
+  .product__img--wrapper {
     height: 24vw;
     width: 24vw;
   }
@@ -63,7 +63,7 @@
     width: calc(100% / 2);
   }
 
-  .product__img-wrapper {
+  .product__img--wrapper {
     height: 32vw;
     width: 32vw;
   }
@@ -74,7 +74,7 @@
     width: 100%;
   }
 
-  .product__img-wrapper {
+  .product__img--wrapper {
     height: 50vw;
     width: 50vw;
   }
