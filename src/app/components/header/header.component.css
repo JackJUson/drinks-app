@@ -5,3 +5,8 @@
   margin-bottom: 16px;
   border: 1px solid rebeccapurple;
 }
+
+.project__input {
+  padding: 8px 16px;
+  font-size: 16px;
+}
