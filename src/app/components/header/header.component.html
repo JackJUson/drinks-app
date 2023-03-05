@@ -2,7 +2,7 @@
   <input type="text" class="header__input" placeholder="Enter keywords..." />
   <div class="header__menu">
     <label for="" class="header__menu--label">Filter By</label>
-    <select name="" id="" class="header__menu--list">
+    <select class="header__menu--list" (change)="onFilterChange($event.target.value)">
       <option value="All">All</option>
       <option value="Beer">Beer</option>
       <option value="Wine">Wine</option>
