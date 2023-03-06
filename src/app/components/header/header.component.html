@@ -1,5 +1,11 @@
 <header class="header">
-  <input type="text" class="header__input" placeholder="Enter keywords..." />
+  <input
+    type="text"
+    class="header__input"
+    placeholder="Enter keywords..."
+    [(ngModel)]="searchText"
+    (input)="searchTextService.updateSearch(searchText)"
+  />
   <div class="header__menu">
     <label for="" class="header__menu--label">Filter By</label>
     <select class="header__menu--list" (change)="onFilterChange($event)">
