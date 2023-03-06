@@ -9,4 +9,8 @@ export class SearchTextService {
   searchText = this.searchSource.asObservable();
 
   constructor() { }
+  
+  updateSearch(text: string) {
+    this.searchSource.next(text);
+  }
 }
