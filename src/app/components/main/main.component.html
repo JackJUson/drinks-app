@@ -1,5 +1,8 @@
 <main class="main">
-  <div class="product__container" *ngFor="let drink of drinks">
+  <div
+    class="product__container"
+    *ngFor="let drink of drinks | filter : searchText"
+  >
     <div *ngIf="drink.isSale" class="product__sale">Sale</div>
     <div class="product__img--wrapper">
       <div class="product__img">{{ drink.productImage }}</div>
