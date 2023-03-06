@@ -2,6 +2,8 @@ import { TestBed } from '@angular/core/testing';
 
 import { SearchTextService } from './search-text.service';
 
+import { describe, expect, it, beforeEach } from '@jest/globals';
+
 describe('SearchTextService', () => {
   let service: SearchTextService;
 
