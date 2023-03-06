@@ -8,8 +8,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 
+import { FilterPipe } from './filter.pipe'; 
+
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, FilterPipe],
   imports: [BrowserModule, AppRoutingModule, FormsModule, Ng2SearchPipeModule],
   providers: [],
   bootstrap: [AppComponent],

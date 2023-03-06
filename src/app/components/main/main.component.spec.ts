@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from '../header/header.component';
 import { MainComponent } from './main.component';
 import { describe, expect, it, beforeEach } from '@jest/globals';
+import { FilterPipe } from '../../filter.pipe';
 
 describe('MainComponent', () => {
   let component: MainComponent;
@@ -11,7 +12,7 @@ describe('MainComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [FormsModule],
-      declarations: [ MainComponent, HeaderComponent ]
+      declarations: [ MainComponent, HeaderComponent, FilterPipe ]
     })
     .compileComponents();
 
