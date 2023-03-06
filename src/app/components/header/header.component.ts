@@ -21,5 +21,6 @@ export class HeaderComponent implements OnInit {
     const target = event.target as HTMLSelectElement;
     const filterValue = target.value;
     this.drinkFilterService.filterDrinks(filterValue);
+    this.searchTextService.updateSearch(this.searchText);
   }
 }
