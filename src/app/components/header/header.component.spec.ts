@@ -24,4 +24,16 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call filterDrinks with the selected filter value"', () => {
+    const filterDrinksSpy = jest.spyOn(drinkFilterService, 'filterDrinks');
+
+    const target = { value: 'Beer' };
+    const event = new Event('change');
+    Object.defineProperty(event, 'target', { value: target });
+
+    component.onFilterChange(event);
+
+    expect(filterDrinksSpy).toHaveBeenCalledWith('Beer');
+  });
 });
