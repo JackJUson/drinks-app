@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Drink } from 'src/app/Drink';
 import { DrinkFilterService } from '../../services/drink-filter.service';
-import drinksData from '../../json/data.json';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +7,7 @@ import drinksData from '../../json/data.json';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  drinks: Drink[] = drinksData;
+  drinks: any[] = [];
 
   constructor(private drinkFilterService: DrinkFilterService) { }
 
