@@ -25,5 +25,15 @@ describe('DrinkFilterService', () => {
         expect(filteredDrinks).toEqual(expectedFilteredDrinks);
       });
     });
+
+    it('should filter drinks by "Beer" drink type', () => {
+      const expectedFilteredDrinks = drinksData.filter(
+        (drink) => drink.type === 'Beer'
+      );
+      service.filterDrinks('Beer');
+      service.filteredDrinks.subscribe((filteredDrinks) => {
+        expect(filteredDrinks).toEqual(expectedFilteredDrinks);
+      });
+    });
   });
 });
