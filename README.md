@@ -39,10 +39,11 @@ $ ng serve
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 ## How to use 
-Search
+### Search
 1. Enter any keyword into the search bar input
 2. See the changes to the drinks product, filtered by the keyword.
-Drop-down Menu
+
+### Drop-down Menu
 1. Click the drop-down menu
 2. Select one option of the drop-down menu
 3. See the changes to the drinks product, filtered by the type.
