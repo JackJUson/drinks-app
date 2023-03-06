@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchTextService } from '../../services/search-text.service';
 import { DrinkFilterService } from '../../services/drink-filter.service';
 
 @Component({
@@ -7,7 +8,12 @@ import { DrinkFilterService } from '../../services/drink-filter.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private drinkFilterService: DrinkFilterService) {}
+  searchText: string = '';
+
+  constructor(
+    public searchTextService: SearchTextService,
+    private drinkFilterService: DrinkFilterService
+  ) {}
 
   ngOnInit(): void {}
 
