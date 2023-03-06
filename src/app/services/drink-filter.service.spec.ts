@@ -3,6 +3,8 @@ import { TestBed } from '@angular/core/testing';
 import { DrinkFilterService } from './drink-filter.service';
 import { describe, expect, it, beforeEach } from '@jest/globals';
 
+import drinksData from '../json/data.json';
+
 describe('DrinkFilterService', () => {
   let service: DrinkFilterService;
 
@@ -15,5 +17,13 @@ describe('DrinkFilterService', () => {
     expect(service).toBeTruthy();
   });
 
-  describe('filterDrinks tests', () => {});
+  describe('filterDrinks tests', () => {
+    it('should filter drinks by "All" and emit the filtered drinks', () => {
+      const expectedFilteredDrinks = drinksData;
+      service.filterDrinks('All');
+      service.filteredDrinks.subscribe((filteredDrinks) => {
+        expect(filteredDrinks).toEqual(expectedFilteredDrinks);
+      });
+    });
+  });
 });
